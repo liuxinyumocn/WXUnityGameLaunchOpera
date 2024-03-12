@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+      "module": "CommonJS",
+      "noImplicitAny": true,
+      "removeComments": true,
+      "preserveConstEnums": true,
+      "sourceMap": true,
+      "target": "es6",
+      "outDir": "./dist",
+      "skipLibCheck": true,
+      "allowJs": false,
+      "declaration": true,
+      "paths": {
+        "@libs/*": ["./cli/libs/*"],
+        "@main/*": ["./src/launchOperaPlay"],
+      }
+  },
+  "include": [
+      "src",
+      "cli",
+  ],
+  "exclude": [
+      "node_modules",
+  ]
+}

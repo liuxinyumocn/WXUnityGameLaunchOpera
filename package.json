@@ -1,0 +1,30 @@
+{
+  "name": "wxunitygamelaunchopera",
+  "version": "1.0.0",
+  "description": "剧本自助生成文档及工具（微信小游戏启动剧情）",
+  "main": "index.js",
+  "scripts": {
+    "dev": "lacopera watch",
+    "watch": "node cli/index.js",
+    "tsc": "tsc -w",
+    "wb": "webpack --mode development",
+    "test": "node ./dist/index0.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liuxinyumocn/WXUnityGameLaunchOpera.git"
+  },
+  "author": "nebula",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/liuxinyumocn/WXUnityGameLaunchOpera/issues"
+  },
+  "homepage": "https://github.com/liuxinyumocn/WXUnityGameLaunchOpera#readme",
+  "devDependencies": {
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.4.2",
+    "webpack": "^5.90.3",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.0.2"
+  }
+}
