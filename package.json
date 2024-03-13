@@ -4,11 +4,10 @@
   "description": "剧本自助生成文档及工具（微信小游戏启动剧情）",
   "main": "index.js",
   "scripts": {
-    "dev": "lacopera -w",
-    "watch": "node cli/index.js",
-    "tsc": "tsc -w",
-    "build-webpack": "webpack --mode development",
-    "test": "node ./dist/index0.js"
+    "cli": "node ./cli/index.js",
+    "dev": "node ./cli/index.js -w",
+    "build": "node cli/index.js -b",
+    "build-webpack": "webpack --mode development"
   },
   "repository": {
     "type": "git",
