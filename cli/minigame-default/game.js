@@ -4,6 +4,7 @@
 /* eslint-disable no-undef */
 import './weapp-adapter';
 import './events';
+import 'lacOpera.js';
 import 'texture-config.js';
 import unityNamespace from './unity-namespace';
 import './webgl.wasm.framework.unityweb';
