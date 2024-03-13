@@ -5,7 +5,7 @@ module.exports = {
   entry: './cli/main.ts',
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'index0.js'
+    filename: 'lacOpExecute.js'
   },
   resolve: {
     extensions: ['.ts', '.js'],
@@ -24,5 +24,5 @@ module.exports = {
     ]
   },
   plugins: [],
-  watch: true
+  // watch: true
 };
