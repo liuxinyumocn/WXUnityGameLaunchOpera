@@ -9,7 +9,8 @@
     "build": "node ./cli/index.js -b",
     "template": "node ./cli/index.js -t",
     "build-webpack": "webpack --mode development",
-    "build-run": "npm run build-webpack && node ./dist/lacOpExecute.js"
+    "build-exec": "node ./dist/lacOpExecute.js",
+    "build-run": "npm run build-webpack && npm run build-exec"
   },
   "repository": {
     "type": "git",
