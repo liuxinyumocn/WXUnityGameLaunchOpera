@@ -1,15 +1,18 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
-const _1 = require(".");
-const Frame_1 = require("../frame/Frame");
-const FrameBase_1 = require("../frame/FrameBase");
-const StoryLine_1 = require("../frame/storyLine/StoryLine");
-const StoryLineBase_1 = require("../frame/storyLine/StoryLineBase");
+const _1 = __importDefault(require("."));
+const Frame_1 = __importDefault(require("../frame/Frame"));
+const FrameBase_1 = __importDefault(require("../frame/FrameBase"));
+const StoryLine_1 = __importDefault(require("../frame/storyLine/StoryLine"));
+const StoryLineBase_1 = __importDefault(require("../frame/storyLine/StoryLineBase"));
 const EmitterType_1 = require("../interface/EmitterType");
 const FrameType_1 = require("../interface/FrameType");
 const OperaDataType_1 = require("../interface/OperaDataType");
-const EventEmitter_1 = require("../utils/EventEmitter");
-const util_1 = require("@tencent/minigamefe/common/util");
+const EventEmitter_1 = __importDefault(require("../utils/EventEmitter"));
+const common_1 = require("../utils/common");
 class OperaData {
     constructor(operaDataJson, director) {
         this.name = '';
@@ -117,7 +120,7 @@ class OperaData {
             throw `传入数据不符合 OperaData 结构要求。`;
         }
         const { name, author, version, hash, opera } = Ob;
-        if ((0, util_1.compareVersion)(version, OperaData.Version) > 0) {
+        if ((0, common_1.compareVersion)(version, OperaData.Version) > 0) {
             throw `剧本版本 ${version} 大于当前 OperaData 解释器版本 ${OperaData.Version}，无法导入数据。`;
         }
         this.name = name;

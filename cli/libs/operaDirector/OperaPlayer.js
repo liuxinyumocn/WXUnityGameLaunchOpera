@@ -1,11 +1,14 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
-const _1 = require(".");
+const _1 = __importDefault(require("."));
 const EmitterType_1 = require("../interface/EmitterType");
 const ExceptionType_1 = require("../interface/ExceptionType");
 const FrameType_1 = require("../interface/FrameType");
 const OperaDataType_1 = require("../interface/OperaDataType");
-const OperaData_1 = require("./OperaData");
+const OperaData_1 = __importDefault(require("./OperaData"));
 class OperaPlayer extends OperaData_1.default {
     constructor(operaDataJson, director) {
         super(operaDataJson, director);

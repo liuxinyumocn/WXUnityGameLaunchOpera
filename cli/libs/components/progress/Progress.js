@@ -1,10 +1,13 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 const EmitterType_1 = require("../../interface/EmitterType");
 const FrameType_1 = require("../../interface/FrameType");
 const ProgressType_1 = require("../../interface/ProgressType");
-const ComponentBase_1 = require("../ComponentBase");
-const UserHandler_1 = require("./UserHandler");
+const ComponentBase_1 = __importDefault(require("../ComponentBase"));
+const UserHandler_1 = __importDefault(require("./UserHandler"));
 class Progress extends ComponentBase_1.default {
     constructor(director) {
         super(director);

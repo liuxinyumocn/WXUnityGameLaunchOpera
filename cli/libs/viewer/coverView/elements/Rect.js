@@ -1,9 +1,12 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 const FrameType_1 = require("../../../interface/FrameType");
-const ElementBase_1 = require("../../base/ElementBase");
-const UIXml_1 = require("../UIXml");
-const DOM_1 = require("../DOM");
+const ElementBase_1 = __importDefault(require("../../base/ElementBase"));
+const UIXml_1 = __importDefault(require("../UIXml"));
+const DOM_1 = __importDefault(require("../DOM"));
 const PositionTools_1 = require("../../utils/PositionTools");
 const OnEventTools_1 = require("../../utils/OnEventTools");
 class Rect extends ElementBase_1.default {

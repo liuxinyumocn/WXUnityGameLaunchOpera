@@ -1,10 +1,13 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 const EmitterType_1 = require("../interface/EmitterType");
 const ExceptionType_1 = require("../interface/ExceptionType");
-const operaDirector_1 = require("../operaDirector");
-const EventEmitter_1 = require("../utils/EventEmitter");
-const env_1 = require("../viewer/coverView/env");
+const operaDirector_1 = __importDefault(require("../operaDirector"));
+const EventEmitter_1 = __importDefault(require("../utils/EventEmitter"));
+const common_1 = require("../utils/common");
 class Report {
     constructor() {
         this.startTimestamp = 0;
@@ -25,7 +28,7 @@ class Report {
         });
     }
     reportScene(data) {
-        if (typeof env_1.wx.reportScene !== 'function') {
+        if (typeof (0, common_1.wx)().reportScene !== 'function') {
             const errInfo = {
                 type: ExceptionType_1.ExceptionType.Report,
                 errmsg: `自定义上报失败,当前基础库版本过低。`,
@@ -33,7 +36,7 @@ class Report {
             operaDirector_1.default.eventEmitter.emit(this.director, EmitterType_1.DirctorCaseType.Exception, errInfo);
             return;
         }
-        env_1.wx.reportScene({
+        (0, common_1.wx)().reportScene({
             sceneId: data.sceneId,
             dimension: !data.dimension ? {} : JSON.parse(data.dimension),
             metric: !data.metric ? {} : JSON.parse(data.metric),

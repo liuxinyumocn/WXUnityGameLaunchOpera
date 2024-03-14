@@ -1,7 +1,11 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.getWxCommonFont = exports.getPrivateFileSystemManager = exports.instanceId = exports.setFileSpaceStatistics = exports.env = exports.xmlParser = exports.webviewLayout = exports.init = exports.create = exports.removePrivateThis = exports.getPrivateThis = exports.Component = exports.coverview = exports.gameTransfer = exports.document = exports.reportKeyValue = exports.canvas = exports.pluginWx = exports.wx = void 0;
-const mgp_1 = require("@tencent/minigamefe/minigame/mgp");
+const mgp_1 = __importDefault(require("@tencent/minigamefe/minigame/mgp"));
+const common_1 = require("../../utils/common");
 const { env } = mgp_1.default;
 exports.env = env;
 let innerWx;
@@ -50,4 +54,5 @@ else {
     };
     exports.instanceId = instanceId = '';
 }
+common_1.common.wx = innerWx;
 //# sourceMappingURL=env.js.map

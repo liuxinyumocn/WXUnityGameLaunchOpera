@@ -1,11 +1,14 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 const EmitterType_1 = require("../interface/EmitterType");
 const ExceptionType_1 = require("../interface/ExceptionType");
 const OperaDataType_1 = require("../interface/OperaDataType");
-const OperaData_1 = require("../operaDirector/OperaData");
-const OperaPlayer_1 = require("../operaDirector/OperaPlayer");
-const EventEmitter_1 = require("../utils/EventEmitter");
+const OperaData_1 = __importDefault(require("../operaDirector/OperaData"));
+const OperaPlayer_1 = __importDefault(require("../operaDirector/OperaPlayer"));
+const EventEmitter_1 = __importDefault(require("../utils/EventEmitter"));
 const FrameElementInstant_1 = require("./FrameElementInstant");
 class FrameBase {
     constructor(type, operaData, operaDataFrameData) {

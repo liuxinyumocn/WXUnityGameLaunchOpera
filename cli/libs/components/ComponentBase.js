@@ -1,8 +1,11 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 const EmitterType_1 = require("../interface/EmitterType");
-const operaDirector_1 = require("../operaDirector");
-const EventEmitter_1 = require("../utils/EventEmitter");
+const operaDirector_1 = __importDefault(require("../operaDirector"));
+const EventEmitter_1 = __importDefault(require("../utils/EventEmitter"));
 class ComponentBase {
     constructor(director) {
         this.director = director;

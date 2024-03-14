@@ -1,6 +1,9 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
-const UIXml_1 = require("./UIXml");
+const UIXml_1 = __importDefault(require("./UIXml"));
 const env_1 = require("./env");
 class DOM extends env_1.Component {
     constructor() {

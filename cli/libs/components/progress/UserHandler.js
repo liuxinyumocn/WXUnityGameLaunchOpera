@@ -1,8 +1,11 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 const EmitterType_1 = require("../../interface/EmitterType");
 const ProgressType_1 = require("../../interface/ProgressType");
-const ComponentBase_1 = require("../ComponentBase");
+const ComponentBase_1 = __importDefault(require("../ComponentBase"));
 class UserHandler {
     constructor(progress) {
         this.percentageValue = 0;

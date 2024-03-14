@@ -1,9 +1,12 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 const FrameType_1 = require("../interface/FrameType");
-const OperaData_1 = require("../operaDirector/OperaData");
-const operaDirector_1 = require("../operaDirector");
-const ViewerCoverView_1 = require("../viewer/coverView/ViewerCoverView");
+const OperaData_1 = __importDefault(require("../operaDirector/OperaData"));
+const operaDirector_1 = __importDefault(require("../operaDirector"));
+const ViewerCoverView_1 = __importDefault(require("../viewer/coverView/ViewerCoverView"));
 const operaData = new OperaData_1.default();
 const storyLineMain = operaData.createStoryLine();
 const fVideoUrl = operaData.createFrame(FrameType_1.FrameType.var, {

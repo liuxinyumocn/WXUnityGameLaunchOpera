@@ -1,12 +1,15 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 const EmitterType_1 = require("../../interface/EmitterType");
 const EventsType_1 = require("../../interface/EventsType");
 const OperaDataType_1 = require("../../interface/OperaDataType");
 const ParamType_1 = require("../../interface/ParamType");
-const FrameBase_1 = require("../FrameBase");
+const FrameBase_1 = __importDefault(require("../FrameBase"));
 const FrameElementInstant_1 = require("../FrameElementInstant");
-const EventsManager_1 = require("./events/EventsManager");
+const EventsManager_1 = __importDefault(require("./events/EventsManager"));
 class FrameElementBase {
     constructor(frame, paramsStruct, eventsStruct) {
         this.params = {};

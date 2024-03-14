@@ -1,19 +1,22 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 const EmitterType_1 = require("../../interface/EmitterType");
-const operaDirector_1 = require("../../operaDirector");
-const ElementBase_1 = require("../base/ElementBase");
-const ViewerBase_1 = require("../base/ViewerBase");
-const DOM_1 = require("./DOM");
-const Video_1 = require("./elements/Video");
-const Audio_1 = require("./elements/Audio");
-const Image_1 = require("./elements/Image");
-const Rect_1 = require("./elements/Rect");
-const Animation_1 = require("./elements/Animation");
-const Report_1 = require("./elements/Report");
-const CheckPoint_1 = require("./elements/CheckPoint");
-const SetTimeout_1 = require("./elements/SetTimeout");
-const ReportCheckPointCount_1 = require("./elements/ReportCheckPointCount");
+const operaDirector_1 = __importDefault(require("../../operaDirector"));
+const ElementBase_1 = __importDefault(require("../base/ElementBase"));
+const ViewerBase_1 = __importDefault(require("../base/ViewerBase"));
+const DOM_1 = __importDefault(require("./DOM"));
+const Video_1 = __importDefault(require("./elements/Video"));
+const Audio_1 = __importDefault(require("./elements/Audio"));
+const Image_1 = __importDefault(require("./elements/Image"));
+const Rect_1 = __importDefault(require("./elements/Rect"));
+const Animation_1 = __importDefault(require("./elements/Animation"));
+const Report_1 = __importDefault(require("./elements/Report"));
+const CheckPoint_1 = __importDefault(require("./elements/CheckPoint"));
+const SetTimeout_1 = __importDefault(require("./elements/SetTimeout"));
+const ReportCheckPointCount_1 = __importDefault(require("./elements/ReportCheckPointCount"));
 class ViewerCoverView extends ViewerBase_1.default {
     constructor() {
         super(ViewerCoverView.ViewerElementsClass);

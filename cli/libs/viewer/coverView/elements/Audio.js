@@ -1,10 +1,13 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 const EmitterType_1 = require("../../../interface/EmitterType");
 const ExceptionType_1 = require("../../../interface/ExceptionType");
 const FrameType_1 = require("../../../interface/FrameType");
-const ElementBase_1 = require("../../base/ElementBase");
-const ViewerBase_1 = require("../../base/ViewerBase");
+const ElementBase_1 = __importDefault(require("../../base/ElementBase"));
+const ViewerBase_1 = __importDefault(require("../../base/ViewerBase"));
 const env_1 = require("../env");
 class Audio extends ElementBase_1.default {
     constructor(...args) {

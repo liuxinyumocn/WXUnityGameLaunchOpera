@@ -1,7 +1,10 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 const FrameType_1 = require("../../../interface/FrameType");
-const ElementBase_1 = require("../../base/ElementBase");
+const ElementBase_1 = __importDefault(require("../../base/ElementBase"));
 class SetTimeout extends ElementBase_1.default {
     constructor(...args) {
         super(...args);

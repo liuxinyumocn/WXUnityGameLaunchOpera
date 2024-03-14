@@ -1,9 +1,12 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 const EmitterType_1 = require("../../interface/EmitterType");
-const operaDirector_1 = require("../../operaDirector");
-const EventEmitter_1 = require("../../utils/EventEmitter");
-const ElementBase_1 = require("./ElementBase");
+const operaDirector_1 = __importDefault(require("../../operaDirector"));
+const EventEmitter_1 = __importDefault(require("../../utils/EventEmitter"));
+const ElementBase_1 = __importDefault(require("./ElementBase"));
 class ViewerBase {
     constructor(viewerElementsClass) {
         this.elements = [];

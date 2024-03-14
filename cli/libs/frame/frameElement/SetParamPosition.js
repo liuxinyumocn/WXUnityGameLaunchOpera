@@ -1,7 +1,10 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 const ParamType_1 = require("../../interface/ParamType");
-const FrameElementBase_1 = require("./FrameElementBase");
+const FrameElementBase_1 = __importDefault(require("./FrameElementBase"));
 const StructLib_1 = require("./StructLib");
 class SetParamPosition extends FrameElementBase_1.default {
     constructor(frame) {

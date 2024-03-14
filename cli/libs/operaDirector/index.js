@@ -1,12 +1,15 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 const EmitterType_1 = require("../interface/EmitterType");
 const FrameType_1 = require("../interface/FrameType");
 const ReportType_1 = require("../interface/ReportType");
-const Report_1 = require("../report/Report");
-const EventEmitter_1 = require("../utils/EventEmitter");
-const ViewerBase_1 = require("../viewer/base/ViewerBase");
-const OperaPlayer_1 = require("./OperaPlayer");
+const Report_1 = __importDefault(require("../report/Report"));
+const EventEmitter_1 = __importDefault(require("../utils/EventEmitter"));
+const ViewerBase_1 = __importDefault(require("../viewer/base/ViewerBase"));
+const OperaPlayer_1 = __importDefault(require("./OperaPlayer"));
 class Director {
     constructor(component) {
         this.operaPlayerReady = false;

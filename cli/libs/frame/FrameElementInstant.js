@@ -1,29 +1,32 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.GetFrameElementParamsAndEventsStruct = exports.GetFrameElementClass = void 0;
 const FrameType_1 = require("../interface/FrameType");
-const Animation_1 = require("./frameElement/Animation");
-const Rect_1 = require("./frameElement/Rect");
-const End_1 = require("./frameElement/End");
-const Exception_1 = require("./frameElement/Exception");
-const If_1 = require("./frameElement/If");
-const Image_1 = require("./frameElement/Image");
-const Media_1 = require("./frameElement/Media");
-const SetParamPosition_1 = require("./frameElement/SetParamPosition");
-const SetParamSize_1 = require("./frameElement/SetParamSize");
-const SetParamSizeAndPosition_1 = require("./frameElement/SetParamSizeAndPosition");
-const VarString_1 = require("./frameElement/VarString");
-const Video_1 = require("./frameElement/Video");
-const VideoPause_1 = require("./frameElement/VideoPause");
-const VideoPlay_1 = require("./frameElement/VideoPlay");
-const SetParam_1 = require("./frameElement/SetParam");
-const Report_1 = require("./frameElement/Report");
-const CheckPoint_1 = require("./frameElement/CheckPoint");
-const SetTimeout_1 = require("./frameElement/SetTimeout");
-const Audio_1 = require("./frameElement/Audio");
-const AudioPlay_1 = require("./frameElement/AudioPlay");
-const AudioPause_1 = require("./frameElement/AudioPause");
-const ReportCheckPointCount_1 = require("./frameElement/ReportCheckPointCount");
+const Animation_1 = __importDefault(require("./frameElement/Animation"));
+const Rect_1 = __importDefault(require("./frameElement/Rect"));
+const End_1 = __importDefault(require("./frameElement/End"));
+const Exception_1 = __importDefault(require("./frameElement/Exception"));
+const If_1 = __importDefault(require("./frameElement/If"));
+const Image_1 = __importDefault(require("./frameElement/Image"));
+const Media_1 = __importDefault(require("./frameElement/Media"));
+const SetParamPosition_1 = __importDefault(require("./frameElement/SetParamPosition"));
+const SetParamSize_1 = __importDefault(require("./frameElement/SetParamSize"));
+const SetParamSizeAndPosition_1 = __importDefault(require("./frameElement/SetParamSizeAndPosition"));
+const VarString_1 = __importDefault(require("./frameElement/VarString"));
+const Video_1 = __importDefault(require("./frameElement/Video"));
+const VideoPause_1 = __importDefault(require("./frameElement/VideoPause"));
+const VideoPlay_1 = __importDefault(require("./frameElement/VideoPlay"));
+const SetParam_1 = __importDefault(require("./frameElement/SetParam"));
+const Report_1 = __importDefault(require("./frameElement/Report"));
+const CheckPoint_1 = __importDefault(require("./frameElement/CheckPoint"));
+const SetTimeout_1 = __importDefault(require("./frameElement/SetTimeout"));
+const Audio_1 = __importDefault(require("./frameElement/Audio"));
+const AudioPlay_1 = __importDefault(require("./frameElement/AudioPlay"));
+const AudioPause_1 = __importDefault(require("./frameElement/AudioPause"));
+const ReportCheckPointCount_1 = __importDefault(require("./frameElement/ReportCheckPointCount"));
 function GetFrameElementClass(frameType) {
     switch (frameType) {
         case FrameType_1.FrameType.media:

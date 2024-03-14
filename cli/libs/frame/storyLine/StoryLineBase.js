@@ -1,8 +1,11 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 const EmitterType_1 = require("../../interface/EmitterType");
 const OperaDataType_1 = require("../../interface/OperaDataType");
-const OperaPlayer_1 = require("../../operaDirector/OperaPlayer");
+const OperaPlayer_1 = __importDefault(require("../../operaDirector/OperaPlayer"));
 class StoryLineBase {
     constructor(operaData, operaDataStoryLineData) {
         this.TYPE = OperaDataType_1.OperaDataType.StoryLine;

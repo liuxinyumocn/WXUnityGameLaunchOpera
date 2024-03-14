@@ -1,1 +1,1 @@
-{"version":3,"file":"ViewerCanvas.js","sourceRoot":"","sources":["../../../src/viewer/canvas/ViewerCanvas.ts"],"names":[],"mappings":";;AACA,mDAA4C;AAK5C,MAAqB,YAAa,SAAQ,oBAAU;IAGlD;QACE,KAAK,CAAC,YAAY,CAAC,mBAAmB,CAAC,CAAC;IAC1C,CAAC;;AAJsB,gCAAmB,GAA2B,EAAE,CAAC;kBADrD,YAAY"}
+{"version":3,"file":"ViewerCanvas.js","sourceRoot":"","sources":["../../../src/viewer/canvas/ViewerCanvas.ts"],"names":[],"mappings":";;;;;AACA,oEAA4C;AAK5C,MAAqB,YAAa,SAAQ,oBAAU;IAGlD;QACE,KAAK,CAAC,YAAY,CAAC,mBAAmB,CAAC,CAAC;IAC1C,CAAC;;AAJsB,gCAAmB,GAA2B,EAAE,CAAC;kBADrD,YAAY"}
