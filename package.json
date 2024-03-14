@@ -8,7 +8,8 @@
     "dev": "node ./cli/index.js -w",
     "build": "node cli/index.js -b",
     "dev-link": "npm run lacopera",
-    "build-webpack": "webpack --mode development"
+    "build-webpack": "webpack --mode development",
+    "build-run": "npm run build-webpack && node ./dist/lacOpExecute.js"
   },
   "repository": {
     "type": "git",
@@ -21,10 +22,14 @@
   },
   "homepage": "https://github.com/liuxinyumocn/WXUnityGameLaunchOpera#readme",
   "devDependencies": {
+    "@types/md5": "^2.3.5",
     "ts-loader": "^9.5.1",
     "typescript": "^5.4.2",
     "webpack": "^5.90.3",
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^5.0.2"
+  },
+  "dependencies": {
+    "md5": "^2.3.0"
   }
 }
