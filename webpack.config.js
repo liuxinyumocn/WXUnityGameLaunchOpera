@@ -24,5 +24,5 @@ module.exports = {
     ]
   },
   plugins: [],
-  // watch: true
+  target: 'node',
 };
