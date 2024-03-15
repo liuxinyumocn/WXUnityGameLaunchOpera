@@ -1,0 +1,30 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.SysFrameType = exports.FrameType = void 0;
+var FrameType;
+(function (FrameType) {
+    FrameType[FrameType["media"] = 0] = "media";
+    FrameType[FrameType["createVideo"] = 13] = "createVideo";
+    FrameType[FrameType["pauseVide"] = 5] = "pauseVide";
+    FrameType[FrameType["playVideo"] = 1] = "playVideo";
+    FrameType[FrameType["createAudio"] = 20] = "createAudio";
+    FrameType[FrameType["pauseAudio"] = 21] = "pauseAudio";
+    FrameType[FrameType["playAudio"] = 22] = "playAudio";
+    FrameType[FrameType["createImage"] = 2] = "createImage";
+    FrameType[FrameType["createRect"] = 6] = "createRect";
+    FrameType[FrameType["end"] = 7] = "end";
+    FrameType[FrameType["var"] = 8] = "var";
+    FrameType[FrameType["setParam"] = 16] = "setParam";
+    FrameType[FrameType["setTimeout"] = 19] = "setTimeout";
+    FrameType[FrameType["setParamSize"] = 9] = "setParamSize";
+    FrameType[FrameType["setParamPosition"] = 10] = "setParamPosition";
+    FrameType[FrameType["setParamSizeAndPosition"] = 11] = "setParamSizeAndPosition";
+    FrameType[FrameType["createAnimationFunction"] = 12] = "createAnimationFunction";
+    FrameType[FrameType["exception"] = 14] = "exception";
+    FrameType[FrameType["if"] = 15] = "if";
+    FrameType[FrameType["report"] = 17] = "report";
+    FrameType[FrameType["checkPoint"] = 18] = "checkPoint";
+    FrameType[FrameType["reportCheckPointCount"] = 23] = "reportCheckPointCount";
+})(FrameType || (exports.FrameType = FrameType = {}));
+exports.SysFrameType = Object.assign({}, FrameType);
+//# sourceMappingURL=FrameType.js.map

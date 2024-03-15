@@ -1,0 +1,46 @@
+import ComponentBase from '../components/ComponentBase';
+import Logger from '../logger/Logger';
+import Report from '../report/Report';
+import EventEmitter from '../utils/EventEmitter';
+import ViewerBase from '../viewer/base/ViewerBase';
+export default class Director {
+    [key: string]: any;
+    static readonly eventEmitter: EventEmitter;
+    private viewer;
+    private operaPlayer;
+    private logger;
+    private report;
+    private onReady;
+    private onFail;
+    private operaPlayerReady;
+    private viewerReady;
+    private callbackErr;
+    private callbackEnd;
+    private callbackGlobalVar;
+    private component;
+    private componentPrototype;
+    constructor(component?: typeof ComponentBase | (typeof ComponentBase)[]);
+    init(viewer: ViewerBase, operaDataJson: string, plugins?: {
+        logger?: Logger;
+        report?: Report;
+    }): Promise<unknown>;
+    private autoPlaying;
+    play(): void;
+    end(): void;
+    nextFrame(): void;
+    print(): void;
+    onErr(callback: Function): void;
+    private throwErr;
+    onEnd(callback: Function): void;
+    private throwEnd;
+    offErr(callback: Function): void;
+    setGlobalVar(globalName: string, value: string): void;
+    getGlobalVar(globalName: string): string;
+    onGlobalVarChange(globalName: string, callback: Function): void;
+    offGlobalVarChange(globalName: string, callback: Function): void;
+    private checkReady;
+    private registerOperaDataEventListener;
+    private reportStoryLine;
+    private initCompnents;
+    private initProxy;
+}

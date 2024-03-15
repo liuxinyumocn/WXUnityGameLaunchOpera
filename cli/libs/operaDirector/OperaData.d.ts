@@ -1,0 +1,41 @@
+import Director from '.';
+import Frame from '../frame/Frame';
+import FrameBase from '../frame/FrameBase';
+import StoryLine from '../frame/storyLine/StoryLine';
+import StoryLineBase from '../frame/storyLine/StoryLineBase';
+import { Events, EventsStruct } from '../interface/EventsType';
+import { FrameType } from '../interface/FrameType';
+import { OperaDataType } from '../interface/OperaDataType';
+import EventEmitter from '../utils/EventEmitter';
+export default class OperaData {
+    static readonly Version = "1.0.5";
+    name: string;
+    author: string;
+    hash: string;
+    static readonly eventEmitter: EventEmitter;
+    protected frames: FrameBase[];
+    protected storyLines: StoryLineBase[];
+    protected mainStoryLine: StoryLineBase;
+    protected director: Director;
+    readonly EndFrame: Frame;
+    constructor(operaDataJson?: string, director?: Director);
+    createFrame(type: FrameType, params?: any, events?: Events | Events[]): Frame;
+    setFrameParams(frame: Frame, param: any): void;
+    setFrameEvents(frame: Frame, events: Events): void;
+    createStoryLine(): StoryLine;
+    protected createTempStoryLine(event?: EventsStruct): StoryLine;
+    getFrameById(uid: string): FrameBase;
+    getStoryLineById(uid: string): StoryLineBase;
+    exportData(baseInfo?: {
+        name?: string;
+        author?: string;
+    }, hash?: Function): string;
+    private exportDataFrame;
+    private exportDataStoryLines;
+    private loadOperaData;
+    private delegateQueue;
+    delegateUid2Ob(type: OperaDataType, uid: string, toBase: object, toProp: string | number): void;
+    todoDelegate(): void;
+    protected registerOperaPlayerEventListener(): void;
+    private static CheckOperaDataStruct;
+}
