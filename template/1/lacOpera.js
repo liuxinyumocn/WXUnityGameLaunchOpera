@@ -1,6 +1,6 @@
 // lacOpera 配置脚本
 // 等同于 game.js 尾部追加代码
-const useLacOpera = Math.random() < 0.7;  // 70% 概率首次启动使用微信启动剧情
+const useLacOpera = Math.random() < 1;  // 100% 概率首次启动使用微信启动剧情
 var play = false;
 GameGlobal.events.on("launchOperaInit", (operaHandler) => {
 

@@ -16,9 +16,9 @@ const operaData = new OperaData();
 
 // baseinfo
 // 请填入游戏启动剧情名称
-operaData.name = '演示剧情Demo';
+operaData.name = '魔魔打勇士';
 // 请填入剧情撰写作者
-operaData.author = 'WechatGameTeam';
+operaData.author = '';
 
 const storyLine = operaData.createStoryLine();
 

@@ -1,29 +1,15 @@
 // lacOpera 配置脚本
 // 等同于 game.js 尾部追加代码
-const useLacOpera = Math.random() < 0.7;  // 70% 概率首次启动使用微信启动剧情
-var play = false;
 GameGlobal.events.on("launchOperaInit", (operaHandler) => {
 
-  var localNewUser = true;
-  try {
-    localNewUser = !wx.getStorageSync('launchOperaLocalData');
-  }catch(e){ }
-  if (localNewUser && useLacOpera) {
-    play = true;
-  }
   operaHandler.config = { // 配置本地剧本路径，若 playPath 文件不存在或读取失败则自动放弃启动剧情
-    playPath: play ? '/launchOperaPlay/operaPlay.obj' : null,
+    playPath: '/launchOperaPlay/operaPlay.obj',
     progressStyle: {
-          hidden: true,
+      hidden: true,
     },
     useCustomProgress :false,
   }
-  wx.reportScene({
-    sceneId: 1008,
-    dimension: {
-      wxLacOpera: play ? 'true' : 'false',
-    },
-  });
+
   operaHandler.onEnd((logger) => {
     console.log('剧情播放结束');
   })
